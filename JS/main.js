@@ -13,6 +13,7 @@ myVariable ="Mathematics";
 //length property
 console.log(myVariable.length);
 
+
 //string method
 console.log(myVariable.charAt(0));
 
@@ -159,36 +160,186 @@ console.log(Math.floor(Math.random()*10)+1);
 
 
 
+//Code challange 
+//generate the random word from the given string value
+
+const myName="Naveen";
+console.log(myName.charAt(Math.floor(Math.random()*myName.length)));  
 
 
 
 
+//---------------------------------IF Statement---------------------------------------//
 
 
+console.log("--------------------IF Condition-----------------------------")
 
+let customerIsBanned = false;
+let viewer ="JS full course";
+let reply;
+let finance = true;
 
+if(viewer)
+{     
+ // The `${}` syntax is used for string interpolation, meaning you can directly embed variables or expressions within a string.
+    reply=`Enjoy ${viewer}`;
+}
+else{
+    reply='Sorry I am still workimg'
+}
 
+console.log(reply);
 
+console.log("--------------------IF condition Another logic-----------------------------")
 
+//If customerIsBanned = true. this condition will work 
+if(customerIsBanned)
+{
+    reply='sorry';
+}
 
-
-
+//IF viwer and finance= true. this codition will work 
+else if(viewer && finance)
+{     
  
+    reply=`Enjoy ${viewer} and finance content`;
+}
+else if(viewer)
+{     
+ // The `${}` syntax is used for string interpolation, meaning you can directly embed variables or expressions within a string.
+    reply=`Enjoy ${viewer}`;
+}
+else{
+    reply='Sorry I am still workimg'
+}
+
+console.log(reply);
+
+
+
+console.log("--------------------IF condition grade logic-----------------------------")
+
+
+let testScore = 60;
+let grade;
+let collegeStudent = true;
+
+
+if(testScore>=90)
+{
+    grade='A';
+}
+else if(testScore>=80)
+{
+    grade='B';
+}
+else if(testScore>=75)
+{
+    grade='C';
+}
+else if(testScore>=60)
+{
+    grade='D';
+}
+else{
+    if(collegeStudent)
+    {
+        grade='RA';
+    }else{
+        grade ='F';
+    }
+    
+}
+
+console.log(grade);
+
+
+//---------------------------------Switch Statement---------------------------------------//
+
+
+console.log("--------------------Switch statement-----------------------------")
+
+
+switch(2)
+{
+   case 1:
+     console.log(1);
+      break;
+
+   case 2:
+     console.log(2);
+      break;
+   default:
+    console.log("No Match");
+}
+
+
+console.log("--------------------Switch statement Another Example-----------------------------")
+
+
+switch(Math.floor(Math.random()*4))
+{
+   case 1:
+     console.log("Random number 1");
+      break;
+
+   case 2:
+     console.log('Random number 2');
+      break;
+
+      case 3:
+        console.log('Random number 3');
+         break;
+   default:
+    console.log("No Match");
+}
+
+
+
+//---------------------------------Conditional operator---------------------------------------//
+console.log("--------------------Conditional operator-----------------------------")
+
+//Conditional (ternary) Operator
+let subscribe ="subscribed";
+let response = subscribe? "Welcome" : "Kindely Subscribe";
+console.log(response);
+
+
+console.log("--------------------grade logic using conditional operator-----------------------------")
+
+let testScore2=90;
+let grade2=testScore2> 89 ? "A" :testScore2>75? "B":testScore2>69 ?"C" :"D";
+
+console.log(grade2);
+
+console.log("--------------------Rock paper scissors in Conditional operator-----------------------------")
+
+let player ="paper";
+let computer ="scissors";
+let result =
+ player===computer? "tie" 
+:player==="rock" && computer==="paper"? "computer Wins!" 
+:player ==="paper" && computer==="scissors"?"computer wins"
+:player ==="scissors" && computer==="rock"?"computer wins"
+:"player wins";
+console.log(result);
+
+//---------------------------------USER INPUT---------------------------------------//
+console.log("-------------------- USER INPUT -----------------------------")
+
+let my = prompt("Enter your Name");
+
+if (my) {
+    console.log(my.trim());
+} else {
+    console.log("Please enter your name");
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+//---------------------------------LOOPS---------------------------------------//
+console.log("-------------------- LOOPS CONCEPTS -----------------------------")
 
 
 
